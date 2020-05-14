@@ -1,4 +1,7 @@
 # SDK em PHP para o Youtube
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/4c15da3a636f4aa5a7949e53fd8bfadd)](https://app.codacy.com/manual/bru-ce/youtube-sdk-php?utm_source=github.com&utm_medium=referral&utm_content=bruceskills/youtube-sdk-php&utm_campaign=Badge_Grade_Dashboard)
+
 SDK em php para download de vídeos do Youtube.
 
 
