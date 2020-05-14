@@ -1,0 +1,413 @@
+/**
+ * File Name: responsive.css
+ */
+
+/**
+ *	-------------------------------------------------------------------------------
+ *	( 01 ) - Responsive Specifications
+ *	-------------------------------------------------------------------------------
+ *
+ *  This part contains the responsive modifications for small devices widths
+ *
+ *	------
+ *
+ *  It has the following code:
+ *
+ *	   |
+ *	   |-->  [ 01 ] - Width From 1200px to 0
+ *	   |-->  [ 02 ] - Width From 992px to 0
+ *	   |-->  [ 03 ] - Width From 768px to 0
+ *	   |-->  [ 04 ] - Width From 480px to 0
+ *	   |-->  [ 05 ] - Width From 320px to 0
+ *	   |-->  [ 06 ] - Height Form 768px to 0
+ *	   |-->  [ 05 ] - Height Form Maximmum to 768px
+ *	   |-->  [ 08 ] - Height Form Maximmum to 900px
+ *
+ */
+
+
+
+ /*  [ 01 ] - Width From 1200px to 0
+ ===================================== */
+ 
+
+@media (max-width: 1200px) {
+
+	/* Boxed Width */
+	body.boxed #full-container {
+		margin: 0;
+		border-radius: 0;
+	}
+
+	/* Header */
+	#header {
+		text-align: left;
+
+
+		.container,
+		.row,
+		[class*="col-"] {
+		  height: initial;
+		}
+
+		&,
+		#header-wrap {
+			height: auto;			
+			min-height: 80px;
+		}
+
+		#header-wrap {
+			overflow: hidden;
+			// position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 10;
+		}
+
+		.logo {
+
+		}
+
+	    .logo,
+	    .mobile-menu-btn {
+	      // top: 40px;
+	    }
+
+	    .header-meta {
+	    	height: 80px;
+	    	border-left: none;
+	    	margin-left: 0;
+	    }
+	}
+
+	.main-menu {
+		left: 0;
+		display: none;
+	}
+
+	#mobile-menu {
+		.mobile-menu {
+			text-align: left;
+		}
+	}
+
+	.mobile-menu-btn {
+		display: inline-block;
+	}
+
+	/* Banner Slider */
+	.banner-slider .owl-nav [class*="owl-"] {
+		margin-top: -10px !important;
+	}
+
+} // < 1200px width
+
+
+
+ /*  [ 02 ] - Width From 992px to 0
+ ==================================== */ 
+
+@media (max-width: 992px) {
+
+	/* Column With Helper Classes Optimization */
+	[class*="col-"] {
+		&[class*="pl-"] {
+			padding-left: 15px;
+		}
+
+		&[class*="pr-"] {
+			padding-right: 15px;
+		}
+	}
+
+	/* Banner Parallax */
+	.banner-parallax {
+		// text-align: center;
+
+		&,
+		.row > [class*="col-"] {
+			height: auto !important;
+			min-height: auto !important;
+		}
+
+		.row {
+			flex-direction: column;
+			min-height: 600px; // min-height of banner parallax
+		}
+
+		.row > [class*="col-"] {
+			align-self: stretch;
+			flex-grow: 1;
+		}
+
+		[class*="col-"]:not(:first-child) .banner-center-box {
+			padding-top: 0;
+			margin-top: -30px;
+		}
+	}
+
+	.slide-content,
+	.banner-center-box {
+		position: initial;
+	}
+
+	.banner-center-box {
+		display: block;
+		top: 0;
+		width: 100%;
+		// padding-top: 180px; // padding-bottom + header height
+	    transform: translateY(0);
+	}
+
+	/* Slider */
+	.fullscreen {
+		height: auto !important;
+	}
+
+	.banner-slider {
+		// height: auto !important;
+		min-height: auto !important;
+	}
+
+	.banner-slider ul li {
+		// background-size: initial;
+	}
+
+	.banner-center-box {
+
+	}
+
+	.slide-content h1 {
+
+	}
+
+	/* Split Section */
+	.split-section .section-img-wrap {
+		position: relative;
+	}
+
+	.split-section .section-content {
+		padding-left: 0;
+	}
+
+	/* Center Vertical Section */
+	.center-vertical .section-content > .container > .row {
+		display: block;
+	}
+
+	/* Watch Video */
+	#watch-video .video-preview {
+		margin-bottom: 50px;
+	}
+
+	/* Page Title */
+	#page-title {
+		text-align: center;
+
+		.breadcrumb {
+			position: initial;
+			margin-top: 20px;
+		}
+	}
+
+	/* Footer Mini */
+	#footer-mini {
+
+		.social-icons {
+
+		}
+	}
+
+	.copyrights-message {
+
+	}
+
+	/* Scroll Top */
+	.scroll-top-icon {
+		display: none !important;
+	}
+
+
+} // < 992px width
+
+
+
+/*  [ 03 ] - Width From 768px to 0
+==================================== */
+
+@media (max-width: 768px) {
+
+	/* Banner Parallax */
+	.banner-parallax {
+		.row {
+			min-height: 500px; // min-height of banner parallax
+		}
+	}
+
+	.slide-content h1 {
+		font-size: 35px;
+	}
+
+	/* CTA Subscribe 3 */
+	.cta-subscribe.cta-subscribe-3 #form-cta-subscribe-2 .form-group {
+		width: 50%;
+
+		&:nth-child(odd) {
+			padding-right: 0;
+		}
+	}
+
+	/* Popup Preview */
+	.popup-preview {
+		.container {
+			width: 100%;
+		}
+	}
+
+	/* Watch Video */
+	#watch-video {
+		.video-preview {
+			height: 350px;
+		}
+	}
+
+	/* CTA Title 1 */
+	#cta-title-1 {
+		h1 {
+			font-size: 45px;
+		}
+	}
+
+
+} // < 768px width
+
+
+
+/*  [ 04 ] - Width From 480px to 0
+==================================== */
+
+@media (max-width: 480px) {
+	/* Header */
+	.header-meta {
+		padding: 0;
+	}
+
+	.info-call {
+		display: none;
+	}
+
+	.mobile-menu-btn {
+		margin-right: 0 !important;
+	}
+
+	.header-btn {
+		display: none;
+	}
+
+	/* Bannar Parallax */
+
+	/* Banner Slider */
+	.banner-slider {
+		// height: 420px !important;
+	}
+
+	.slide-content h1 {
+		font-size: 30px;
+		line-height: 45px;
+	}
+
+	/* CTA Subscribe 2 */
+	.cta-subscribe.cta-subscribe-2 input[type="submit"] {
+	    height: 50px;
+	    line-height: 50px;
+	    font-size: 12px !important;
+	}
+
+	/* CTA Subscribe 3 */
+	.cta-subscribe.cta-subscribe-3 #form-cta-subscribe-2 .form-group {
+		width: 100%;
+		padding-right: 0;
+	}
+
+	/* Buttons */
+	.btn.xx-large {
+		font-size: 14px;
+		padding: 13px 40px;
+	}
+
+	/* Section Title */
+	.section-title h2 {
+		font-size: 26px;
+	}
+
+	/* Watch Video */
+	#watch-video {
+		.video-preview {
+			height: 250px;
+		}
+	}
+
+	/* Our Services */
+	.our-services {
+
+	}
+
+	/* CTA Title 1 */
+	#cta-title-1 {
+		h1 {
+			font-size: 35px;
+		}
+	}
+
+	/* Style Switcher */
+	.style-switcher	{
+		display: none !important;
+	}
+
+
+} // < 480px width
+
+
+
+/*  [ 05 ] - Width From 320px to 0
+==================================== */
+
+@media (max-width: 320px) {
+
+} // < 320px width
+
+
+
+/*  [ 06 ] - Height From 768px to 0
+===================================== */
+
+@media (max-height : 768px) {
+
+
+
+} // < 768px height
+
+
+
+/*  [ 07 ] - Height From Maximmum to 768px
+============================================ */
+
+@media (min-height : 768px) {
+
+
+
+} // > 768px height
+
+
+
+/*  [ 08 ] - Height From Maximmum to 900px
+============================================ */
+
+@media (min-height : 900px) {
+
+
+} // > 900px height
+
+
+
