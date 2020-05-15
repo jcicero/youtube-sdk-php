@@ -1,11 +1,16 @@
 # SDK em PHP para o Youtube
 SDK em php para download de vídeos do Youtube.
 
-
+[![Latest Stable Version](https://poser.pugx.org/bruceskills/youtube-sdk-php/v/stable)](https://packagist.org/packages/bruceskills/youtube-sdk-php)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/74ac1ae908f347dcac8a2f8b28254551)](https://www.codacy.com/manual/bru-ce/youtube-sdk-php?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=bruceskills/youtube-sdk-php&amp;utm_campaign=Badge_Grade)
+[![License](https://poser.pugx.org/bruceskills/youtube-sdk-php/license)](https://packagist.org/packages/bruceskills/youtube-sdk-php)
 
 ## Observação
-
 Essa SDK foi construída devido a necessidade de integração de um projeto de terceiro com o Youtube. Foi publicada com a ideia de que possa ser útil para outras pessoas. Este repositório (e, consequentemente, seu dono) não possuem qualquer vínculo com o Youtube.
+
+O pacote fornece uma maneira fácil de realizar download de vídeos do Youtube. 
+
+Este projeto foi inspirado em um pacote PHP muito popular [athlon1600/youtube-downloader](https://github.com/athlon1600/youtube-downloader).
 
 
 ## Como instalar

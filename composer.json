@@ -1,8 +1,9 @@
 {
     "name": "bruceskills/youtube-sdk-php",
-    "type": "project",
+    "type": "library",
     "description": "Essa SDK foi construída devido a necessidade de integração de um projeto de terceiro com o Youtube. Foi publicada com a ideia de que possa ser útil para outras pessoas. Este repositório (e, consequentemente, seu dono) não possuem qualquer vínculo com o Youtube.",
     "license": "MIT",
+    "keywords": ["php youtube downloader","php youtube downloader github","php youtube downloader script","php youtube downloader 2020","php youtube download api","php youtube download source code","php download youtube mp3","php youtube video download","php youtube download script","php script download youtube mp3","youtube download php github","download youtube audio php","php youtube api download video","php youtube downloader free download","youtube download php class","youtube download php code","php curl download youtube video","youtube video download php code","php download video from youtube","php download from youtube","php script download video from youtube","php download mp3 from youtube","php tutorial video free download youtube","php code to download video from youtube","free php script youtube download","php get youtube download link","php get youtube video download","youtube video download in php","youtube mp3z download index php","youtube mp3 download index php","get youtube video download link php","php download youtube video mp4","youtube mp4 download php","php youtube downloader mp3","youtube downloader php script 2019","youtube downloader getvideo.php","youtube downloader php project","youtube video download php script","php download youtube video to server","php script to download youtube videos","youtube api php script download","youtube thumbnail download php","php code to download youtube videos","youtube video download using php","php download youtube video"],
     "require": {
         "php": "^7.0",
         "ext-curl": "*",
